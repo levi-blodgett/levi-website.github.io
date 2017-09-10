@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Cheat Sheet</title>
+  <!-- BOOTSTRAP -->
+  <link href="css/app.css" rel="stylesheet">
+  <!-- Using this to make the navbar's margin smaller -->
+  <style>
+    .navbar {
+      margin-bottom: 0;
+    }
+    .jumbotron {
+      background-image: url(img/jumbotron.jpg);
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <!-- Need to include bootstrap javascript for this to work -->
+    <!-- If you want this a darker color just do -inverse as the value instead of -default -->
+    <nav class="navbar navbar-default">
+      <!-- If you want this pushed to the right then just take away the part of the value that says "-fluid"-->
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <!-- Brand -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Bootstrap Cheat Sheet</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <!-- Link and right dropdown -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- JUMBOTRON -->
+    <div class="jumbotron text-center" >
+      <div class="container">
+        <h1 class="asap-font">Levi Blodgett</h1>
+        <p>Welcome to my profile!</p>
+        <div class="btn-group buffer">
+				<center>
+  				<a href="https://www.facebook.com/maxg203" class="btn btn-lg btn-primary outline" target="_blank" id="facebook"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a>
+  				<a href="http://youtube.maxgoodridge.com" class="btn btn-lg btn-danger outline" target="_blank" id="youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i> YouTube</a>
+  				<a href="https://www.instagram.com/maxg303/" class="btn btn-lg btn-warning outline" target="_blank" id="instagram"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+  				<a href="https://www.stackoverflow.com/users/4548304/max-goodridge?tab=profile" class="btn btn-lg btn-info outline" target="_blank" id="se"><i class="fa fa-stack-overflow" aria-hidden="true"></i> Stack Overflow</a>
+				<a href="http://www.github.com/maxg203" class="btn btn-lg btn-success outline" target="_blank" id="github"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+  				<a href="http://docs.maxgoodridge.com" class="btn btn-lg btn-primary outline" target="_blank" id="facebook"><i class="fa fa-book" aria-hidden="true"></i> Docs</a>
+				</center>
+  			</div>
+      </div>
+    </div>
+
+
+
+  <!-- TYPOGRAPHY -->
+  <!-- The lead class is good for standing out alone up top -->
+
+  <div class="container">
+    <h1 class="page-header">Hello, world! <small>Secondary text</small></h1>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ducimus ipsam ab architecto consequuntur illo magnam quaerat veritatis aspernatur odit minima sequi rem repellendus consectetur mollitia nemo quo odio, facere!</p>
+    <p><mark>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</mark> Eligendi, at, <del>saepe</del>. Ducimus vitae sit beatae molestias explicabo, officiis quasi voluptatibus illum quis adipisci mollitia tempore modi animi maiores nam iure. <u>Lorem</u>      ipsum dolor sit amet, consectetur adipisicing elit. Asperiores <strong>voluptatum</strong>, mollitia, pariatur amet quas nemo assumenda at doloremque error, perspiciatis, dolor sequi! Error repudiandae accusamus officia consequatur, corporis provident
+      doloribus!</p>
+
+    <hr>
+
+
+
+
+
+    <div style="height:400px"></div>
+
+
+    <!--jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
