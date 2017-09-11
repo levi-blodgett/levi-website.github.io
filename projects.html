@@ -14,76 +14,109 @@
   <script src="js/bootstrap.min.js"></script>
 </head>
 <style>
+
 </style>
+
 <body>
 
   <!-- NAVBAR -->
   <!-- Need to include bootstrap javascript for this to work -->
-    <!-- If you want this a darker color just do -inverse as the value instead of -default -->
-    <nav class="navbar navbar-default">
-      <!-- If you want this pushed to the right then just take away the part of the value that says "-fluid"-->
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <!-- Brand -->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+  <!-- If you want this a darker color just do -inverse as the value instead of -default -->
+  <nav class="navbar navbar-default">
+    <!-- If you want this pushed to the right then just take away the part of the value that says "-fluid"-->
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <!-- Brand -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand btn" href="index.html"><strong>LB</strong></a>
-        </div>
+        <a class="navbar-brand btn" href="index.html"><strong>LB</strong></a>
+      </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <!-- Link and right dropdown -->
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Menu <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li class="listitem"><a href="index.html">Home</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="listitem"><a href="about.html">About Me</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="active listitem"><a href="projects.html">Projects</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="listitem"><a href="resume.html">Resume</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <!-- Link and right dropdown -->
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Menu <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="listitem"><a href="index.html">Home</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="listitem"><a href="about.html">About Me</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="active listitem"><a href="projects.html">Projects</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="listitem"><a href="resume.html">Resume</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
 
-    <div class="main">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">Projects</h4>
+  <!-- JUMBOTRON -->
+  <div class="jumbotron text-center" id="small_jumbo">
+    <div class="container bg">
+        <center>
+          <h1>Projects</h1>
+        </center>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="panel panel-default" id="project_panel">
+            <div class="panel-heading">
+              <h4 class="panel-title">Websites</h4>
+            </div>
+            <div class="panel-body">
+              <div class="well">
+                <h4><a href="https://leviblodgett.com" target="_blank">Leviblodgett.com</a></h4>
+                <hr>
+                <p>This is the first website I have ever done. I did it a week after starting to learn programming.</p>
+                <hr>
+                <p> The following is the list of the technology that I used for the making of this website:
+                  <p/>
+                  <ul>
+                    <li>HTML 5 - Markup language</li>
+                    <li>CSS - Style sheet language</li>
+                    <li>SASS - Style sheet language</li>
+                    <li>Twitter Bootstrap - Front-end framework</li>
+                    <li>Koala - GUI application for SASS</li>
+                    <li>Git - Version control system (VCI)</li>
+                    <li>Command Line - Linux & Windows</li>
+                    <li>Live-server - NPM/Bower extension</li>
+                    <li>Font-awesome - Icon and CSS framework</li>
+                    <li>Javascript - Diverse and powerful language</li>
+                    <li>Bower - Package manager</li>
+                    <li>NPM - Package manager for JS</li>
+                  </ul>
               </div>
-              <div class="panel-body">
-                <div class="well">
-                  <h4>Leviblodgett.com</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime veniam placeat ea tenetur at rem eligendi explicabo, assumenda deleniti nesciunt molestiae! Id voluptate repudiandae deleniti, quaerat doloribus quibusdam quas fugit.</p>
-                </div>
-                <div class="well">
-                  <h4>Web Development</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime veniam placeat ea tenetur at rem eligendi explicabo, assumenda deleniti nesciunt molestiae! Id voluptate repudiandae deleniti, quaerat doloribus quibusdam quas fugit.</p>
-                </div>
-                <div class="well">
-                  <h4>SEO</h4>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime veniam placeat ea tenetur at rem eligendi explicabo, assumenda deleniti nesciunt molestiae! Id voluptate repudiandae deleniti, quaerat doloribus quibusdam quas fugit.</p>
-                </div>
+              <div class="well">
+                <h4><a href="https://tamararoseblodgett.com" target="_blank">Tamararoseblodgett.com</a></h4>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime veniam placeat ea tenetur at rem eligendi explicabo, assumenda deleniti nesciunt molestiae! Id voluptate repudiandae deleniti, quaerat doloribus quibusdam quas fugit.</p>
+              </div>
+              <div class="well">
+                <h4><a href="https://jessicaprofessional.com" target="_blank">Jessicaprofessional.com</a></h4>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime veniam placeat ea tenetur at rem eligendi explicabo, assumenda deleniti nesciunt molestiae! Id voluptate repudiandae deleniti, quaerat doloribus quibusdam quas fugit.</p>
               </div>
             </div>
-          </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  </div>
 
 </body>
 <hr>

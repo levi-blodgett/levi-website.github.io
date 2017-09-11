@@ -14,171 +14,177 @@
   <script src="js/bootstrap.min.js"></script>
 </head>
 <style>
+
 </style>
+
 <body>
 
   <!-- NAVBAR -->
   <!-- Need to include bootstrap javascript for this to work -->
-    <!-- If you want this a darker color just do -inverse as the value instead of -default -->
-    <nav class="navbar navbar-default">
-      <!-- If you want this pushed to the right then just take away the part of the value that says "-fluid"-->
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <!-- Brand -->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+  <!-- If you want this a darker color just do -inverse as the value instead of -default -->
+  <nav class="navbar navbar-default">
+    <!-- If you want this pushed to the right then just take away the part of the value that says "-fluid"-->
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <!-- Brand -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand btn" href="index.html"><strong>LB</strong></a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <!-- Link and right dropdown -->
-          <ul class="nav navbar-nav navbar-right">
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Menu <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li class="active listitem"><a href="index.html">Home</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="listitem"><a href="about.html">About Me</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="listitem"><a href="projects.html">Projects</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="listitem"><a href="resume.html">Resume</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-
-    <!-- JUMBOTRON -->
-    <div class="jumbotron text-center">
-      <div="container bg">
-        <h1>Levi Blodgett</h1>
-        <h2>Full-Stack Developer</h2>
-        <p>Welcome to my online portfolio! You can find some information about my life below, or you can use the dropdown bar in the corner and see my skills and credentials.
-        <div class="btn-group buffer">
-				<center>
-  				<a href="https://twitter.com/LeviBlodgett" class="btn btn-lg btn-info" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
-  				<a href="https://stackoverflow.com/users/8570546/levi-blodgett?tab=profile" class="btn btn-lg stack" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i> Stack Overflow</a>
-				  <a href="https://github.com/levi-blodgett" class="btn btn-lg btn-success" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
-  				<a href="https://www.linkedin.com/in/levi-blodgett/" class="btn btn-lg btn-primary" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
-				</center>
-  			</div>
+        <a class="navbar-brand btn" href="index.html"><strong>LB</strong></a>
       </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <!-- Link and right dropdown -->
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Menu <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="active listitem"><a href="index.html">Home</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="listitem"><a href="about.html">About Me</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="listitem"><a href="projects.html">Projects</a></li>
+              <li role="separator" class="divider"></li>
+              <li class="listitem"><a href="resume.html">Resume</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
     </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+  <!-- JUMBOTRON -->
+  <div class="jumbotron text-center" id="big_jumbo">
+    <div="container bg">
+      <h1>Levi Blodgett</h1>
+      <h2>Full-Stack Developer</h2>
+      <p>Welcome to my online portfolio! You can find some information about my life below, or you can use the dropdown bar in the corner and see my skills and credentials.
+        <div class="btn-group buffer">
+          <center>
+            <a href="https://twitter.com/LeviBlodgett" class="btn btn-lg btn-info" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+            <a href="https://stackoverflow.com/users/8570546/levi-blodgett?tab=profile" class="btn btn-lg stack" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i> Stack Overflow</a>
+            <a href="https://github.com/levi-blodgett" class="btn btn-lg btn-success" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/levi-blodgett/" class="btn btn-lg btn-primary" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+          </center>
+        </div>
+  </div>
+  </div>
 
 
 
 
-    <div class="section-b">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
+  <div class="section-b">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                       I grew up in Washington, Alaska, and South Dakota.
                     </a>
                   </h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                  <div class="panel-body">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia aliquid expedita ab adipisci nisi consectetur, doloremque reprehenderit. At, fugiat, voluptates? Reiciendis in laborum totam eveniet iste deserunt. Dolores, illum a.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aliquam magni molestias nulla ipsa amet magnam adipisci autem quidem pariatur voluptas illo eveniet minus est eos dolor, debitis, quas, doloremque.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur laborum repellat sunt odit quia dolore, dolorem provident? Ab alias minima sequi provident dolore itaque pariatur fugit odit, dolorum harum!
-                  </div>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia aliquid expedita ab adipisci nisi consectetur, doloremque reprehenderit. At, fugiat, voluptates? Reiciendis in laborum totam eveniet iste deserunt. Dolores, illum a. Lorem ipsum dolor sit
+                  amet, consectetur adipisicing elit. At aliquam magni molestias nulla ipsa amet magnam adipisci autem quidem pariatur voluptas illo eveniet minus est eos dolor, debitis, quas, doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit. Ad consequatur laborum repellat sunt odit quia dolore, dolorem provident? Ab alias minima sequi provident dolore itaque pariatur fugit odit, dolorum harum!
                 </div>
               </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwo">
-                  <h4 class="panel-title">
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                       My family often spent time in Mexico every year.
                     </a>
                   </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                  <div class="panel-body">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis itaque sunt quod, ex necessitatibus consectetur, quos voluptatem, aspernatur quia omnis vero quibusdam repudiandae adipisci nihil exercitationem nisi voluptates illo id.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro minima, quidem eum, tempore in soluta possimus nobis incidunt similique recusandae eaque facere eius distinctio. Nulla doloremque reiciendis earum, cupiditate iste.
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                  </div>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis itaque sunt quod, ex necessitatibus consectetur, quos voluptatem, aspernatur quia omnis vero quibusdam repudiandae adipisci nihil exercitationem nisi voluptates illo id. Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit. Porro minima, quidem eum, tempore in soluta possimus nobis incidunt similique recusandae eaque facere eius distinctio. Nulla doloremque reiciendis earum, cupiditate iste. Anim pariatur cliche reprehenderit,
+                  enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
+                  coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                  synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                 </div>
               </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingThree">
-                  <h4 class="panel-title">
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                       I'm married to a gorgeous young woman.
                     </a>
                   </h4>
-                </div>
-                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                  <div class="panel-body">
-                    The most beautiful woman in all the lands, Jessica Smith, who is soon to be Blodgett. No one in the world holds a candle to her.
-                  </div>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  The most beautiful woman in all the lands, Jessica Smith, who is soon to be Blodgett. No one in the world holds a candle to her.
                 </div>
               </div>
+            </div>
 
 
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingFour">
-                  <h4 class="panel-title">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingFour">
+                <h4 class="panel-title">
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                       I tried learning programming before, but it was the wrong time.
                     </a>
                   </h4>
-                </div>
-                <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                  <div class="panel-body">
-                    The most beautiful woman in all the lands, Jessica Smith, who is soon to be Blodgett. No one in the world holds a candle to her.
-                  </div>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div class="panel-body">
+                  The most beautiful woman in all the lands, Jessica Smith, who is soon to be Blodgett. No one in the world holds a candle to her.
                 </div>
               </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingFive">
-                  <h4 class="panel-title">
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingFive">
+                <h4 class="panel-title">
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                       I taught myself programming.
                     </a>
                   </h4>
-                </div>
-                <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                  <div class="panel-body">
-                    The most beautiful woman in all the lands, Jessica Smith, who is soon to be Blodgett. No one in the world holds a candle to her.
-                  </div>
+              </div>
+              <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                <div class="panel-body">
+                  The most beautiful woman in all the lands, Jessica Smith, who is soon to be Blodgett. No one in the world holds a candle to her.
                 </div>
               </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingSix">
-                  <h4 class="panel-title">
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingSix">
+                <h4 class="panel-title">
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                       I have a lot of hobbies.
                     </a>
                   </h4>
-                </div>
-                <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                  <div class="panel-body">
-                    The most beautiful woman in all the lands, Jessica Smith, who is soon to be Blodgett. No one in the world holds a candle to her.
-                  </div>
+              </div>
+              <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                <div class="panel-body">
+                  The most beautiful woman in all the lands, Jessica Smith, who is soon to be Blodgett. No one in the world holds a candle to her.
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
-            <img src="img/3.jpg">
-          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="img/3.jpg">
         </div>
       </div>
     </div>
+  </div>
 
 </body>
 <hr>
