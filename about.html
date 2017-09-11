@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Levi Blodgett | Home</title>
+  <!-- BOOTSTRAP -->
+  <link href="css/app.css" rel="stylesheet">
+  <!--jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+</head>
+<style>
+</style>
+<body>
+
+  <!-- NAVBAR -->
+  <!-- Need to include bootstrap javascript for this to work -->
+    <!-- If you want this a darker color just do -inverse as the value instead of -default -->
+    <nav class="navbar navbar-default">
+      <!-- If you want this pushed to the right then just take away the part of the value that says "-fluid"-->
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <!-- Brand -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand btn" href="index.html"><strong>LB</strong></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <!-- Link and right dropdown -->
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Menu <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="listitem"><a href="index.html">Home</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="active listitem"><a href="about.html">About Me</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="listitem"><a href="projects.html">Projects</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="listitem"><a href="resume.html">Resume</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- JUMBOTRON -->
+    <div class="jumbotron text-center" id="small_jumbo">
+      <div="container bg">
+        <div class="btn-group buffer">
+				<center>
+  				<a href="https://twitter.com/LeviBlodgett" class="btn btn-lg btn-info" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+  				<a href="https://stackoverflow.com/users/8570546/levi-blodgett?tab=profile" class="btn btn-lg stack" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i> Stack Overflow</a>
+				  <a href="https://github.com/levi-blodgett" class="btn btn-lg btn-success" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+  				<a href="https://www.linkedin.com/in/levi-blodgett/" class="btn btn-lg btn-primary" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+				</center>
+  			</div>
+      </div>
+    </div>
+
+
+</body>
+<hr>
+<footer>
+  <div class="container text-center">
+    <button id="email" onclick="copyToClipboard(document.getElementById('email').innerHTML)">Levi_Blodgett@outlook.com</button>
+    <script>
+      function copyToClipboard(text) {
+        window.prompt("To copy to clipboard: Ctrl+C, Enter", text);
+      }
+    </script>
+    <br>
+    <a href="https://twitter.com/LeviBlodgett"><i class="fa fa-twitter info"></i></a>
+    <a href="https://stackoverflow.com/users/8570546/levi-blodgett"><i class="fa fa-stack-overflow stack-icon"></i></a>
+    <a href="hhttps://github.com/levi-blodgett"><i class="fa fa-github success"></i></a>
+    <a href="https://www.linkedin.com/in/levi-blodgett/"><i class="fa fa-linkedin primary"></i></a>
+    <p> &copy; Copyright 2017</p>
+  </div>
+</footer>
+
+</html>
