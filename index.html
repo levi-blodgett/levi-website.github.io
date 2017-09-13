@@ -8,49 +8,37 @@
   <title> Levi Blodgett | Home</title>
   <!-- BOOTSTRAP -->
   <link href="css/app.css" rel="stylesheet">
-  <!--jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
 </head>
 <style>
 
 </style>
 
-<body>
+<body id="top">
 
   <!-- NAVBAR -->
   <!-- Need to include bootstrap javascript for this to work -->
   <!-- If you want this a darker color just do -inverse as the value instead of -default -->
   <nav class="navbar navbar-default">
     <!-- If you want this pushed to the right then just take away the part of the value that says "-fluid"-->
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
+    <div>
         <!-- Brand -->
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        <a class="navbar-brand btn" href="index.html"><strong>LB</strong></a>
+      <div id="pin">
+        <a class="btn" href="index.html"><strong>LB</strong></a>
       </div>
-
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <!-- Link and right dropdown -->
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Menu <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars fa-fw fa-lg"></i></a>
             <ul class="dropdown-menu">
-              <li class="active listitem"><a href="index.html">Home</a></li>
+              <li class="active"><a href="index.html"><i class="fa-fw fa fa-home"></i> | Home</a></li>
               <li role="separator" class="divider"></li>
-              <li class="listitem"><a href="about.html">About Me</a></li>
+              <li><a href="about.html"><i class="fa-fw fa fa-user-circle"></i> | About Me</a></li>
               <li role="separator" class="divider"></li>
-              <li class="listitem"><a href="projects.html">Projects</a></li>
+              <li><a href="projects.html"><i class="fa-fw fa fa-laptop"></i> | Projects</a></li>
               <li role="separator" class="divider"></li>
-              <li class="listitem"><a href="resume.html">Resume</a></li>
+              <li><a href="resume.html"><i class="fa-fw fa fa-folder"></i> | Resume</a></li>
             </ul>
           </li>
         </ul>
@@ -64,8 +52,8 @@
   <div class="jumbotron text-center" id="big_jumbo">
     <div="container bg">
       <h1>Levi Blodgett</h1>
-      <h2>Full-Stack Developer</h2>
-      <p>Welcome to my online portfolio! You can find some information about my life below, or you can use the dropdown bar in the corner and see my skills and credentials.
+      <h2>Web Designer</h2>
+      <p>Welcome to my online portfolio! You can find some professonial information below, as well as use the menu in the corner to view my about page, projects, and resume.
         <div class="btn-group buffer">
           <center>
             <a href="https://twitter.com/LeviBlodgett" class="btn btn-lg btn-info" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
@@ -77,131 +65,108 @@
   </div>
   </div>
 
-
-
-
   <div class="section-b">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingOne">
+              <div class="panel-heading" role="tab" id="One">
                 <h4 class="panel-title">
                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      I grew up in Washington, Alaska, and South Dakota.
+                      Programming and Spoken Languages
                     </a>
                   </h4>
               </div>
-              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="One">
                 <div class="panel-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia aliquid expedita ab adipisci nisi consectetur, doloremque reprehenderit. At, fugiat, voluptates? Reiciendis in laborum totam eveniet iste deserunt. Dolores, illum a. Lorem ipsum dolor sit
-                  amet, consectetur adipisicing elit. At aliquam magni molestias nulla ipsa amet magnam adipisci autem quidem pariatur voluptas illo eveniet minus est eos dolor, debitis, quas, doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit. Ad consequatur laborum repellat sunt odit quia dolore, dolorem provident? Ab alias minima sequi provident dolore itaque pariatur fugit odit, dolorum harum!
+                  I have a passion for programming language. I am learning new front-end languages, server-side languages, frameworks, etc. every day and am always trying to learn something
+                  new or improve upon my knowledge of explored topics.
+                  <br>
+                  <br>
+                  I have a very strong interest in spoken language. I am fluent in English, semi-fluent in Spanish, and beginner at Dutch (have to start somewhere)! I consider this one of
+                  my main hobbies and I will continue to grow my lanugage base and gain further fluency.
                 </div>
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingTwo">
+              <div class="panel-heading" role="tab" id="Two">
                 <h4 class="panel-title">
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      My family often spent time in Mexico every year.
+                      Team Environment & Interpersonal Skills
                     </a>
                   </h4>
               </div>
-              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="Two">
                 <div class="panel-body">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis itaque sunt quod, ex necessitatibus consectetur, quos voluptatem, aspernatur quia omnis vero quibusdam repudiandae adipisci nihil exercitationem nisi voluptates illo id. Lorem ipsum dolor
-                  sit amet, consectetur adipisicing elit. Porro minima, quidem eum, tempore in soluta possimus nobis incidunt similique recusandae eaque facere eius distinctio. Nulla doloremque reiciendis earum, cupiditate iste. Anim pariatur cliche reprehenderit,
-                  enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin
-                  coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-                  synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  I've worked in a number of jobs where a team environment is essential to thrive, and I have a very strong skillset when it comes to working together in a team, or leading it.
+                  In the restaurant industry you have to be quick on your feet as well as communicative with all of your coworkers and managers.
+                  <br>
+                  <br>
+                  The key foundations in any team environment is trust, follow-through, and communication. As an employee you want the guest to have the absolute best experience possible as
+                  well as them having faith that you'll take care of them if any problems were to arise. You need to be in constant communication with your team and have faith when you need
+                  one other.
                 </div>
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingThree">
+              <div class="panel-heading" role="tab" id="Three">
                 <h4 class="panel-title">
                     <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      I'm married to a gorgeous young woman.
+                      Driven & Ambitious
                     </a>
                   </h4>
               </div>
-              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="Three">
                 <div class="panel-body">
-                  The most beautiful woman in all the lands, Jessica Smith, who is soon to be Blodgett. No one in the world holds a candle to her.
-                </div>
-              </div>
-            </div>
-
-
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingFour">
-                <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                      I tried learning programming before, but it was the wrong time.
-                    </a>
-                  </h4>
-              </div>
-              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-                <div class="panel-body">
-                  The most beautiful woman in all the lands, Jessica Smith, who is soon to be Blodgett. No one in the world holds a candle to her.
-                </div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingFive">
-                <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                      I taught myself programming.
-                    </a>
-                  </h4>
-              </div>
-              <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                <div class="panel-body">
-                  The most beautiful woman in all the lands, Jessica Smith, who is soon to be Blodgett. No one in the world holds a candle to her.
-                </div>
-              </div>
-            </div>
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingSix">
-                <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                      I have a lot of hobbies.
-                    </a>
-                  </h4>
-              </div>
-              <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                <div class="panel-body">
-                  The most beautiful woman in all the lands, Jessica Smith, who is soon to be Blodgett. No one in the world holds a candle to her.
+                  I programmed this website after learning how to do so in a week, I am completely passionate about programming and everything that goes with it. I have a drive that keeps me up at night
+                  thinking about how I could improve the brand in the corner to be more interactive (I later did). I am always looking to improve and continue my knowledge in this field and out.
+                  <br>
+                  <br>
+                  I am comfortable in a leadership position, and am always looking to excel in the environment I'm in. I look for opportunities all the time so I can keep advancing and continue
+                  bettering my skillset for the company and myself.
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <img src="img/3.jpg">
-        </div>
       </div>
     </div>
   </div>
 
-</body>
-<hr>
-<footer>
-  <div class="container text-center">
-    <button id="email" onclick="copyToClipboard(document.getElementById('email').innerHTML)">Levi_Blodgett@outlook.com</button>
+  <!--jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
 
-    <script>
-      function copyToClipboard(text) {
-        window.prompt("To copy to clipboard: Ctrl+C, Enter", text);
-      }
-    </script>
+</body>
+<footer>
+  <hr>
+  <div class="container text-center">
+    <a href="https://twitter.com/LeviBlodgett" target="_blank"><i class="fa fa-twitter info"></i></a>
+    <a href="https://stackoverflow.com/users/8570546/levi-blodgett" target="_blank"><i class="fa fa-stack-overflow stack-icon"></i></a>
+    <i class="fa fa-envelope-square" aria-hidden="true" id="email" onclick="copyToClipboard('message')" target="_blank"></i></button>
+    <a href="hhttps://github.com/levi-blodgett"><i class="fa fa-github success" target="_blank"></i></a>
+    <a href="https://www.linkedin.com/in/levi-blodgett/" target="_blank"><i class="fa fa-linkedin primary"></i></a>
     <br>
-    <a href="https://twitter.com/LeviBlodgett"><i class="fa fa-twitter info"></i></a>
-    <a href="https://stackoverflow.com/users/8570546/levi-blodgett"><i class="fa fa-stack-overflow stack-icon"></i></a>
-    <a href="hhttps://github.com/levi-blodgett"><i class="fa fa-github success"></i></a>
-    <a href="https://www.linkedin.com/in/levi-blodgett/"><i class="fa fa-linkedin primary"></i></a>
+    <p id="message" >levi_blodgett@outlook.com</p>
+    <script>
+
+
+    function copyToClipboard(elementId) {
+
+
+      var aux = document.createElement("input");
+      aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+      document.body.appendChild(aux);
+      aux.select();
+      document.execCommand("copy");
+
+      document.body.removeChild(aux);
+
+    }
+    </script>
+    <p><a href="#top">Top of Page</a></p>
     <p> &copy; Copyright 2017</p>
   </div>
 </footer>
