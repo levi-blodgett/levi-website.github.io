@@ -6,28 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> Levi Blodgett | Home</title>
-  <!-- BOOTSTRAP -->
   <link href="css/app.css" rel="stylesheet">
 </head>
-<style>
 
-</style>
 
 <body id="top">
 
-  <!-- NAVBAR -->
-  <!-- Need to include bootstrap javascript for this to work -->
-  <!-- If you want this a darker color just do -inverse as the value instead of -default -->
+
   <nav class="navbar navbar-default">
-    <!-- If you want this pushed to the right then just take away the part of the value that says "-fluid"-->
     <div>
-        <!-- Brand -->
       <div id="pin">
         <a class="btn" href="index.html"><strong>LB</strong></a>
       </div>
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <!-- Link and right dropdown -->
+      <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars fa-fw fa-lg"></i></a>
@@ -43,12 +34,10 @@
           </li>
         </ul>
       </div>
-      <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container-fluid -->
   </nav>
 
-  <!-- JUMBOTRON -->
+
   <div class="jumbotron text-center" id="big_jumbo">
     <div="container bg">
       <h1>Levi Blodgett</h1>
@@ -137,7 +126,7 @@
   <!--jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
+  <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 
 </body>
 <footer>
@@ -145,8 +134,8 @@
   <div class="container text-center">
     <a href="https://twitter.com/LeviBlodgett" target="_blank"><i class="fa fa-twitter info"></i></a>
     <a href="https://stackoverflow.com/users/8570546/levi-blodgett" target="_blank"><i class="fa fa-stack-overflow stack-icon"></i></a>
-    <i class="fa fa-envelope-square" aria-hidden="true" id="email" onclick="copyToClipboard('message')" target="_blank"></i></button>
-    <a href="hhttps://github.com/levi-blodgett"><i class="fa fa-github success" target="_blank"></i></a>
+    <i class="fa fa-envelope-square" aria-hidden="true" id="email" onclick="copyToClipboard('message')"></i>
+    <a href="https://github.com/levi-blodgett" target="_blank"><i class="fa fa-github success"></i></a>
     <a href="https://www.linkedin.com/in/levi-blodgett/" target="_blank"><i class="fa fa-linkedin primary"></i></a>
     <br>
     <p id="message" >levi_blodgett@outlook.com</p>
@@ -164,10 +153,12 @@
 
       document.body.removeChild(aux);
 
+      return confirm('Email copied to clipboard!');
+
     }
     </script>
     <p><a href="#top">Top of Page</a></p>
-    <p> &copy; Copyright 2017</p>
+    <p><i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2017</p>
   </div>
 </footer>
 

@@ -6,87 +6,202 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> Levi Blodgett | About</title>
-  <!-- BOOTSTRAP -->
   <link href="css/app.css" rel="stylesheet">
-  <!--jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/bootstrap.min.js"></script>
 </head>
-<style>
 
-</style>
 
-<body>
+<body id="top">
 
-  <!-- NAVBAR -->
-  <!-- Need to include bootstrap javascript for this to work -->
-  <!-- If you want this a darker color just do -inverse as the value instead of -default -->
+
   <nav class="navbar navbar-default">
-    <!-- If you want this pushed to the right then just take away the part of the value that says "-fluid"-->
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <!-- Brand -->
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        <a class="navbar-brand btn" href="index.html"><strong>LB</strong></a>
+    <div>
+      <div id="pin">
+        <a class="btn" href="index.html"><strong>LB</strong></a>
       </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <!-- Link and right dropdown -->
+      <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Menu <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars fa-fw fa-lg"></i></a>
             <ul class="dropdown-menu">
-              <li class="listitem"><a href="index.html">Home</a></li>
+              <li><a href="index.html"><i class="fa-fw fa fa-home"></i> | Home</a></li>
               <li role="separator" class="divider"></li>
-              <li class="active listitem"><a href="about.html">About Me</a></li>
+              <li class="active"><a href="about.html"><i class="fa-fw fa fa-user-circle"></i> | About Me</a></li>
               <li role="separator" class="divider"></li>
-              <li class="listitem"><a href="projects.html">Projects</a></li>
+              <li><a href="projects.html"><i class="fa-fw fa fa-laptop"></i> | Projects</a></li>
               <li role="separator" class="divider"></li>
-              <li class="listitem"><a href="resume.html">Resume</a></li>
+              <li><a href="resume.html"><i class="fa-fw fa fa-folder"></i> | Resume</a></li>
             </ul>
           </li>
         </ul>
       </div>
-      <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container-fluid -->
   </nav>
 
-  <!-- JUMBOTRON -->
   <div class="jumbotron text-center" id="small_jumbo">
-    <div class="container bg">
-        <center>
-          <h1>About</h1>
-        </center>
+    <div class="container-fluid bg">
+      <center>
+        <h1>About</h1>
+      </center>
     </div>
   </div>
 
-
-</body>
-<hr>
-<footer>
-  <div class="container text-center">
-    <button id="email" onclick="copyToClipboard(document.getElementById('email').innerHTML)">Levi_Blodgett@outlook.com</button>
-    <script>
-      function copyToClipboard(text) {
-        window.prompt("To copy to clipboard: Ctrl+C, Enter", text);
-      }
-    </script>
-    <br>
-    <a href="https://twitter.com/LeviBlodgett"><i class="fa fa-twitter info"></i></a>
-    <a href="https://stackoverflow.com/users/8570546/levi-blodgett"><i class="fa fa-stack-overflow stack-icon"></i></a>
-    <a href="hhttps://github.com/levi-blodgett"><i class="fa fa-github success"></i></a>
-    <a href="https://www.linkedin.com/in/levi-blodgett/"><i class="fa fa-linkedin primary"></i></a>
-    <p> &copy; Copyright 2017</p>
+  <div class="img">
+  		<img src="img/prof.jpg">
   </div>
-</footer>
 
-</html>
+  <div class=" container text-center intro">
+    <h3>"Here are some introductory facts so you may be able to know me just a little bit better."</h3>
+  </div>
+
+  <br>
+
+  <div class="section-b">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      I grew up in Washington, Alaska, and South Dakota.
+                    </a>
+                  </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  I lived for almost nine years in Washington after I was born there, where I learned to love apples and rain quite a bit (you kind of have to). My family and I moved to Alaska so my father could take ownership of my grandfather's fuel company in a small
+                  town called <a href="https://en.wikipedia.org/wiki/Seldovia,_Alaska">Seldovia</a> (less than
+                  three-hundred people). After about seven years in Alaska our family took an ETT (Emergency Trauma Technician) course together and my dad became passionate
+                    about medicine, so he went to <a href="https://en.wikipedia.org/wiki/Sioux_Falls,_South_Dakota">Sioux Falls</a> temporarily to pursure paramedicine. He liked it so much here that he told us to visit and see how we like it, and the rest is history.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      My family often spent time in Mexico every year.
+                    </a>
+                  </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  When we were in Alaska, we would go down to Mexico every year for at least a month. I went to school down there twice and the high school was one of the best experiences of my life. We didn't have a car so we would walk every day. We would walk to the
+                  beach about every other day and be there until the sun set. I became pretty fluent in Spanish while in <a href="https://en.wikipedia.org/wiki/Mazatl%C3%A1n">Mazatlán</a>, and continued learning back in the States.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      I married the most wonderful woman in the world.
+                    </a>
+                  </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  My wife is perfect.
+                </div>
+              </div>
+            </div>
+
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingFour">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      I tried learning programming before, but it was the wrong time.
+                    </a>
+                  </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div class="panel-body">
+                  When I tried attending college, the only course I enjoyed was a programming course... for <a href="https://en.wikipedia.org/wiki/Visual_Basic_for_Applications">VBA</a> out of all things. I didn't like the teacher and I sure didn't like
+                  the language, but I still loved programming, even then! I thought about pursuing it but dismissed it at the time thinking it irrational. Over a year went by and I decided to pursue it completely, and here we stand.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingFive">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      I taught myself programming.
+                    </a>
+                  </h4>
+              </div>
+              <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                <div class="panel-body">
+                  On September 5th, 2017, I had begun programming with the intention of starting a career and learning real programming languages. I used <a href="https://www.codecademy.com/">CodeAcademy</a>,
+                   <a href="https://www.youtube.com/user/TechGuyWeb">Traversy Media's Youtube</a>, help sites like <a href="https://stackoverflow.com/">
+                  Stack Overflow</a>, and countless websites dedicated to resources to learn. I plan on learning even more server-side technology in the near future with these resources and more.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingSix">
+                <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      I have a lot of hobbies.
+                    </a>
+                  </h4>
+              </div>
+              <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                <div class="panel-body">
+                  Well, before I started programming all the time.
+                  <br>
+                  <br> My hobbies are lockpicking, spoken languages, reading, learning (about anything), good movies (objectively so, of course), video games, collecting watches, singing, failing at learning instruments, and giving my attention to anything
+                  but programming since that's all I do anymore!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="img/3.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+
+
+  <footer>
+    <hr>
+    <div class="container text-center">
+      <a href="https://twitter.com/LeviBlodgett" target="_blank"><i class="fa fa-twitter info"></i></a>
+      <a href="https://stackoverflow.com/users/8570546/levi-blodgett" target="_blank"><i class="fa fa-stack-overflow stack-icon"></i></a>
+      <i class="fa fa-envelope-square" aria-hidden="true" id="email" onclick="copyToClipboard('message')"></i>
+      <a href="https://github.com/levi-blodgett" target="_blank"><i class="fa fa-github success"></i></a>
+      <a href="https://www.linkedin.com/in/levi-blodgett/" target="_blank"><i class="fa fa-linkedin primary"></i></a>
+      <br>
+      <p id="message" >levi_blodgett@outlook.com</p>
+      <script>
+
+
+      function copyToClipboard(elementId) {
+
+
+        var aux = document.createElement("input");
+        aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+        document.body.appendChild(aux);
+        aux.select();
+        document.execCommand("copy");
+
+        document.body.removeChild(aux);
+
+        return confirm('Email copied to clipboard!');
+
+      }
+      </script>
+      <p><a href="#top">Top of Page</a></p>
+      <p><i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2017</p>
+    </div>
+  </footer>
+
+  </html>
