@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Levi Blodgett | Projects</title>
+  <title>Projects | Levi Blodgett</title>
   <link href="css/app.css" rel="stylesheet">
 </head>
 
@@ -15,7 +15,7 @@
 
   <nav class="navbar navbar-default">
     <div>
-      <div id="pin">
+      <div id="pin" title="Levi Blodgett">
         <a class="btn" href="index.html"><strong>LB</strong></a>
       </div>
       <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -84,11 +84,11 @@
                   <li>NPM - Package manager for JS</li>
                 </ul>
               </div>
+              <hr id="divider">
               <div class="well">
                 <h4><a href="https://jessicablodgett.com" target="_blank">Jessicablodgett.com</a></h4>
                 <hr>
-                <p>This is a completely custom site I made for my wife Jessica, who is in university currently. I changed my design layout and started from scratch twice because I wasn't satisfied with the
-                direction. I didn't use bootstrap at all for a framework, just as a resource for some of the trickier button designs and such. I wanted to make this website responsive on my own terms so it
+                <p>This is a completely custom website I designed and made for my wife while she's in university. I didn't use bootstrap at all for a framework, just as a resource for some of the trickier button designs and such. I wanted to make this website responsive on my own terms so it
                 would be completely evident I am comfortable with the technologies I'm using here, including responsive design which both of my sites have. I like to incorporate as much as what I know into the websites I make to make the process faster and the result
                 better than ever.
                 <br>
@@ -130,30 +130,32 @@
 <footer>
   <hr>
   <div class="container text-center">
-    <a href="https://twitter.com/LeviBlodgett" target="_blank"><i class="fa fa-twitter info"></i></a>
-    <a href="https://stackoverflow.com/users/8570546/levi-blodgett" target="_blank"><i class="fa fa-stack-overflow stack-icon"></i></a>
-    <i class="fa fa-envelope-square" aria-hidden="true" id="email" onclick="copyToClipboard('message')"></i>
-    <a href="https://github.com/levi-blodgett" target="_blank"><i class="fa fa-github success"></i></a>
-    <a href="https://www.linkedin.com/in/levi-blodgett/" target="_blank"><i class="fa fa-linkedin primary"></i></a>
+    <a title="Twitter" href="https://twitter.com/LeviBlodgett" target="_blank"><i class="fa fa-twitter info"></i></a>
+    <a title="Stack Overflow" href="https://stackoverflow.com/users/8570546/levi-blodgett" target="_blank"><i class="fa fa-stack-overflow stack-icon"></i></a>
+    <i title="Copy Email to Clipboard" class="fa fa-envelope-square" aria-hidden="true" id="email" onclick="copyToClipboard('message')"></i>
+    <a title="Github" href="https://github.com/levi-blodgett" target="_blank"><i class="fa fa-github success"></i></a>
+    <a title="LinkedIn" href="https://www.linkedin.com/in/levi-blodgett/" target="_blank"><i class="fa fa-linkedin primary"></i></a>
     <br>
-    <p id="message">levi_blodgett@outlook.com</p>
+    <p id="message" >levi_blodgett@outlook.com</p>
     <script>
-      function copyToClipboard(elementId) {
 
 
-        var aux = document.createElement("input");
-        aux.setAttribute("value", document.getElementById(elementId).innerHTML);
-        document.body.appendChild(aux);
-        aux.select();
-        document.execCommand("copy");
+    function copyToClipboard(elementId) {
 
-        document.body.removeChild(aux);
 
-        return confirm('Email copied to clipboard!');
+      var aux = document.createElement("input");
+      aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+      document.body.appendChild(aux);
+      aux.select();
+      document.execCommand("copy");
 
-      }
+      document.body.removeChild(aux);
+
+      return confirm('Email copied to clipboard!');
+
+    }
     </script>
-    <p><a href="#top">Top of Page</a></p>
+    <p><a href="#top" id="top" >Top of Page</a></p>
     <p><i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2017</p>
   </div>
 </footer>

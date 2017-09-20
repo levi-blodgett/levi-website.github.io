@@ -34,27 +34,32 @@
   max-height: 292px;
   width: 100%;
   margin: 20px auto;
-
   img {
     margin-bottom: 20px;
     width: 100%;
     border-radius: 10px;
-    border: 4px solid $theme_border;
+    border: 1px solid $jumbo_h1;
     max-width: 438px;
     max-height: 292px;
+    box-shadow: 0px 0px 20px #000;
   }
 }
 
 .row {
-  .panel-body, a {
+  .panel-body{
     font-size: 20px;
+    background-color: $panel-bg;
+    a {
+      color: $stack-bg;
+    }
   }
   img {
-    max-height: 960x;
-    max-width: 640x;
+    max-height: 960px;
+    max-width: 640px;
     width: 100%;
-    border: 4px solid $theme_color;
-    border-radius: 5%;
+    border: 1px solid $jumbo_h1;
+    box-shadow: 0px 0px 20px #000;
+    border-radius: 10px;
   }
 }
 
@@ -84,12 +89,29 @@
 
 #project_panel {
   margin: 20px 0px;
+
+  #divider {
+    margin: 0;
+    padding: 0;
+    height: 2px;
+  }
+
+  .panel-body {
+    margin: 0, 0 !important;
+    padding: 0;
+  }
+
+  .well {
+    margin-bottom: 0px;
+  }
+
   a {
     font-weight: bold;
     letter-spacing: .8px;
     color: $stack-bg;
     font-size: 25px;
   }
+
   hr {
     background-color: $stack-border;
     height: 1px;
@@ -102,7 +124,7 @@
 
   .panel-heading{
     color: white;
-    background-color: $stack-border;
+    background-color: lighten($jumbo_h1,18%);
     .panel-title {
       font-size: 30px;
     }
@@ -121,18 +143,19 @@
       border-radius: 10px;
       border-width: medium;
       border-style: solid;
-      border-color: $jumbo_h1;
-      color: $jumbo_h1;
+      border-color: $stack-border;
+      color: $state-success-text;
       padding: 7px 10px;
       transition: all ease-in-out 100ms;
       margin-bottom: 4px;
       background: transparent;
+      box-shadow: 0px 0px 5px #000;
     }
 
     button:hover {
-      border-color: darken($jumbo_h1, 20%);
-      background-color: $theme-color;
-      color: darken($jumbo_h1, 20%);
+      border-color: darken($stack-border, 20%);
+      background-color: $pin-bg;
+      color: darken($state-success-text, 40%);
     }
 }
 
@@ -152,16 +175,17 @@ a {
     border-radius: 20%;
     border-width: medium;
     border-style: solid;
-    border-color: $jumbo_h1;
-    color: $jumbo_h1;
+    border-color: $stack-border;
+    color: $state-success-text;
     padding: 2px 5.5px;
     transition: all ease-in-out 100ms;
+    box-shadow: 0px 0px 5px #000;
 }
 
 a:hover {
-  border-color: darken($jumbo_h1, 20%);
-  background-color: $theme-color;
-  color: darken($jumbo_h1, 20%);
+  border-color: darken($stack-border, 20%);
+  background-color: $pin-bg;
+  color: darken($state-success-text, 40%);
 }
 }
 
@@ -259,6 +283,10 @@ a:hover {
 footer {
 
   background-image: linear-gradient(to top, $footer_color, transparent);
+
+  #top {
+    color: $stack-bg;
+  }
 
   #message {
     position: absolute;

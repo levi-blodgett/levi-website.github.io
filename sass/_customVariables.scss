@@ -9,6 +9,7 @@ $jumbo_h1: rgb(0,60,90);
 $jumbo_h2: rgb(0,45,75);
 $jumbo_p: #000;
 $jumbo-bg: rgb(200,225,255);
+$panel-bg: lighten($jumbo-bg, 6%);
 
 $theme_color: lighten($jumbo_h1, 10%);
 $theme_color2: lighten($theme_color, 10%);
@@ -19,6 +20,7 @@ $background_color: rgba(200,220,255,0.5);
 $stack-color: #fff;
 $stack-bg: rgb(0,128,30);
 $stack-border:darken($stack-bg, 5%);
+$pin-bg: rgba(0,128,0,0.7);
 
 $dropdown_color: rgba(50,50,50,.15);
 
