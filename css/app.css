@@ -10,6 +10,14 @@
 * {
   font-family: 'Roboto', 'monospace'; }
 
+#aboutOne, #aboutTwo, #aboutThree, #aboutFour, #aboutFive, #aboutSix {
+  background-color: #005e8d;
+  color: white; }
+
+#aboutOne:hover, #aboutTwo:hover, #aboutThree:hover, #aboutFour:hover, #aboutFive:hover, #aboutSix:hover {
+  text-decoration: underline;
+  text-decoration-color: white; }
+
 .intro {
   font-size: 20px;
   padding: 20px 0; }
@@ -51,7 +59,12 @@
   background-color: #00801e; }
 
 #One, #Two, #Three, #Four, #Five, #Six {
-  background-color: #0080c0; }
+  background-color: #0080c0;
+  color: white; }
+
+#One:hover, #Two:hover, #Three:hover, #Four:hover, #Five:hover, #Six:hover {
+  text-decoration: underline;
+  text-decoration-color: white; }
 
 #project_panel {
   margin: 20px 0px; }
