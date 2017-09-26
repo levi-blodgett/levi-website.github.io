@@ -11,8 +11,8 @@ $jumbo_p: #000;
 $jumbo-bg: rgb(200,225,255);
 $panel-bg: lighten($jumbo-bg, 6%);
 
-$theme_color: lighten($jumbo_h1, 10%);
-$theme_color2: lighten($theme_color, 10%);
+$theme_color: rgb(0, 94, 141);
+$theme_color2: rgb(0, 128, 192);
 $theme_border: rgba(0,60,90, 0.4);
 
 $background_color: rgba(200,220,255,0.5);
