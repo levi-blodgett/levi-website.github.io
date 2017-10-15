@@ -268,7 +268,7 @@
       }
     }
   }
-  @media only screen and (min-width: 845px) and (max-width: 991px) {
+  @media only screen and (min-width: 691px) and (max-width: 991px) {
     * {
       font-size: 14px;
     }
@@ -282,21 +282,21 @@
     }
 
     img {
-      max-width: 800px;
-      max-height: 800px;
-      margin-top: 180px !important;
+      max-width: 600px;
+      max-height: 600px;
+      margin-top: 131px !important;
     }
 
     .lower {
-      height: 397px;
-      width: 800px;
-      margin-top: 152px !important;
+      height: 299px;
+      width: 600px;
+      margin-top: 130px !important;
     }
 
     .image-caption-wrapper {
       .image-caption {
-        width: 800px;
-        height: 398px;
+        width: 600px;
+        height: 300px;
 
         #ajk123 {
           margin-top: 100px;
@@ -304,6 +304,7 @@
       }
     }
   }
+
   @media only screen and (min-width: 501px) and (max-width: 690px) {
     * {
       font-size: 14px;
