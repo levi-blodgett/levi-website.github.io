@@ -11,16 +11,16 @@
 </head>
 
 
-<body id="top">
+<body onload="document.body.style.opacity='1'" id="top">
 
 
-  <nav class="navbar navbar-default">
-    <div>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
       <div id="pin" title="Levi Blodgett">
         <a class="btn" href="index.html"><strong>LB</strong></a>
       </div>
       <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right fix">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars fa-fw fa-lg"></i></a>
             <ul class="dropdown-menu">
@@ -38,6 +38,10 @@
     </div>
   </nav>
 
+  <div class="main">
+    <p>Filler</p>
+  </div>
+
   <div class="jumbotron text-center" id="small_jumbo">
     <div class="container-fluid bg">
       <center>
@@ -47,17 +51,17 @@
   </div>
 
   <center id="margin">
-  <object data="img/Levi-Blodgett-Resume.pdf" width="700" height="800" type='application/pdf'>
+    <object data="img/Levi-Blodgett-Resume.pdf" width="700" height="800" type='application/pdf'>
     <embed src="img/Levi-Blodgett-Resume.pdf" width="700" height="800" type='application/pdf'>
   </object>
-  <br>
-  <a href="img/Levi-Blodgett-Resume.pdf" download="Levi-Blodgett-Resume.pdf" id="download">
+    <br>
+    <a href="img/Levi-Blodgett-Resume.pdf" download="Levi-Blodgett-Resume.pdf" id="download">
     <button>
       Download my Resume
       <i class="fa fa-external-link" aria-hidden="true"></i>
     </button>
   </a>
-  <center>
+    <center>
 
 
 
@@ -79,26 +83,24 @@
     <a title="Github" href="https://github.com/levi-blodgett" target="_blank"><i class="fa fa-github success"></i></a>
     <a title="LinkedIn" href="https://www.linkedin.com/in/levi-blodgett/" target="_blank"><i class="fa fa-linkedin primary"></i></a>
     <br>
-    <p id="message" >levi_blodgett@outlook.com</p>
+    <p id="message">levi_blodgett@outlook.com</p>
     <script>
+      function copyToClipboard(elementId) {
 
 
-    function copyToClipboard(elementId) {
+        var aux = document.createElement("input");
+        aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+        document.body.appendChild(aux);
+        aux.select();
+        document.execCommand("copy");
 
+        document.body.removeChild(aux);
 
-      var aux = document.createElement("input");
-      aux.setAttribute("value", document.getElementById(elementId).innerHTML);
-      document.body.appendChild(aux);
-      aux.select();
-      document.execCommand("copy");
+        return confirm('Email copied to clipboard!');
 
-      document.body.removeChild(aux);
-
-      return confirm('Email copied to clipboard!');
-
-    }
+      }
     </script>
-    <p><a href="#top" id="top" >Top of Page</a></p>
+    <p><a href="#top" id="top">Top of Page</a></p>
     <p><i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2017</p>
   </div>
 </footer>
