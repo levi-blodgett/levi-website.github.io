@@ -18,6 +18,7 @@ $theme_color3: rgb(0, 162, 243);
 $theme_border: rgba(0,60,90, 0.4);
 
 $background_color: rgba(200,220,255,0.5);
+$background_color2: rgba(200,220,255,0.75);
 
 $stack-color: #fff;
 $stack-bg: rgb(0,128,30);
@@ -398,7 +399,7 @@ $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2
 $navbar-collapse-max-height:       340px !default;
 
 $navbar-default-color:             $jumbo-h1 !default;
-$navbar-default-bg:                $background_color !default;
+$navbar-default-bg:                $background_color2 !default;
 $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar links
