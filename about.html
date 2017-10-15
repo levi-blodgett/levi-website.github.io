@@ -96,11 +96,11 @@
             </div>
             <div class="panel panel-default">
               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="text-decoration: none">
-              <div class="panel-heading" role="tab" id="aboutThree">
-                <h4 class="panel-title">
+                <div class="panel-heading" role="tab" id="aboutThree">
+                  <h4 class="panel-title">
                       I married the most wonderful woman in the world.
                   </h4>
-              </div>
+                </div>
               </a>
               <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="aboutThree">
                 <div class="panel-body">
@@ -110,30 +110,31 @@
             </div>
             <div class="panel panel-default">
               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="text-decoration: none">
-              <div class="panel-heading" role="tab" id="aboutFour">
-                <h4 class="panel-title">
+                <div class="panel-heading" role="tab" id="aboutFour">
+                  <h4 class="panel-title">
                       I tried learning programming before, but it was the wrong time.
                   </h4>
-              </div>
+                </div>
               </a>
               <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="aboutFour">
                 <div class="panel-body">
                   When I tried attending college, the only course I enjoyed was a programming course... for <a href="https://en.wikipedia.org/wiki/Visual_Basic_for_Applications" target="_blank">VBA</a> out of all things. I didn't like the teacher and
-                  I sure didn't like the language, but I still loved programming, even then! I thought about pursuing it but dismissed it at the time thinking it irrational. Over a year went by and I decided to pursue it completely, and here we stand.
+                  I didn't like the language at the time, but I still loved programming, even then! I thought about pursuing it but dismissed it at the time thinking it irrational. Over a year went by and I decided to pursue it completely, and here we
+                  stand.
                 </div>
               </div>
             </div>
             <div class="panel panel-default">
               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="text-decoration: none">
-              <div class="panel-heading" role="tab" id="aboutFive">
-                <h4 class="panel-title">
+                <div class="panel-heading" role="tab" id="aboutFive">
+                  <h4 class="panel-title">
                       I taught myself programming.
                   </h4>
-              </div>
+                </div>
               </a>
               <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="aboutFive">
                 <div class="panel-body">
-                  On September 5th, 2017, I had begun programming with the intention of starting a career and learning real programming languages. I used <a href="https://www.codecademy.com/" target="_blank">CodeAcademy</a>,
+                  On September 5th, 2017, I began programming with the intention of starting a career and learning real programming languages. I used <a href="https://www.codecademy.com/" target="_blank">CodeAcademy</a>,
                   <a href="https://www.youtube.com/user/TechGuyWeb" target="_blank">Traversy Media's Youtube</a>, help sites like <a href="https://stackoverflow.com/" target="_blank">
                   Stack Overflow</a>, and countless websites dedicated to resources to learn. I plan on learning even more server-side technology in the near future with these resources and more.
                 </div>
@@ -141,11 +142,11 @@
             </div>
             <div class="panel panel-default">
               <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style="text-decoration: none">
-              <div class="panel-heading" role="tab" id="aboutSix">
-                <h4 class="panel-title">
+                <div class="panel-heading" role="tab" id="aboutSix">
+                  <h4 class="panel-title">
                       I have a lot of hobbies.
                   </h4>
-              </div>
+                </div>
               </a>
               <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="aboutSix">
                 <div class="panel-body">
@@ -170,36 +171,36 @@
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 
+</body>
+<footer>
+  <hr style="visibility: hidden;">
+  <div class="container text-center">
+    <a title="Twitter" href="https://twitter.com/LeviBlodgett" target="_blank"><i class="fa fa-twitter info"></i></a>
+    <a title="Stack Overflow" href="https://stackoverflow.com/users/8570546/levi-blodgett" target="_blank"><i class="fa fa-stack-overflow stack-icon"></i></a>
+    <i title="Copy Email to Clipboard" class="fa fa-envelope-square" aria-hidden="true" id="email" onclick="copyToClipboard('message')"></i>
+    <a title="Github" href="https://github.com/levi-blodgett" target="_blank"><i class="fa fa-github success"></i></a>
+    <a title="LinkedIn" href="https://www.linkedin.com/in/levi-blodgett/" target="_blank"><i class="fa fa-linkedin primary"></i></a>
+    <br>
+    <p id="message">levi_blodgett@outlook.com</p>
+    <script>
+      function copyToClipboard(elementId) {
 
-  <footer>
-    <hr>
-    <div class="container text-center">
-      <a title="Twitter" href="https://twitter.com/LeviBlodgett" target="_blank"><i class="fa fa-twitter info"></i></a>
-      <a title="Stack Overflow" href="https://stackoverflow.com/users/8570546/levi-blodgett" target="_blank"><i class="fa fa-stack-overflow stack-icon"></i></a>
-      <i title="Copy Email to Clipboard" class="fa fa-envelope-square" aria-hidden="true" id="email" onclick="copyToClipboard('message')"></i>
-      <a title="Github" href="https://github.com/levi-blodgett" target="_blank"><i class="fa fa-github success"></i></a>
-      <a title="LinkedIn" href="https://www.linkedin.com/in/levi-blodgett/" target="_blank"><i class="fa fa-linkedin primary"></i></a>
-      <br>
-      <p id="message">levi_blodgett@outlook.com</p>
-      <script>
-        function copyToClipboard(elementId) {
 
+        var aux = document.createElement("input");
+        aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+        document.body.appendChild(aux);
+        aux.select();
+        document.execCommand("copy");
 
-          var aux = document.createElement("input");
-          aux.setAttribute("value", document.getElementById(elementId).innerHTML);
-          document.body.appendChild(aux);
-          aux.select();
-          document.execCommand("copy");
+        document.body.removeChild(aux);
 
-          document.body.removeChild(aux);
+        return confirm('Email copied to clipboard!');
 
-          return confirm('Email copied to clipboard!');
-
-        }
-      </script>
-      <p><a href="#top" id="top">Top of Page</a></p>
-      <p><i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2017</p>
-    </div>
-  </footer>
+      }
+    </script>
+    <p><a href="#top" id="top">Top of Page</a></p>
+    <p><i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2017</p>
+  </div>
+</footer>
 
 </html>
