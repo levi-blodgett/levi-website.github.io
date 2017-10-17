@@ -513,6 +513,9 @@ object {
     margin: 0 auto;
     margin-bottom: 20px; }
   #big_jumbo #tbh1:hover {
+    color: #0080c0;
+    user-select: none; }
+  #big_jumbo #dyt123:hover {
     color: #00a2f3;
     user-select: none; }
   #big_jumbo a {

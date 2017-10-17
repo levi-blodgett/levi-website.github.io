@@ -9,6 +9,16 @@
   }
 }
 
+@keyframes slideIn {
+  0% {
+    transform: translateY(-10%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 #big_jumbo {
   animation: 2s ease-out 0s 1 slideFromTop;
 }
@@ -761,8 +771,20 @@ object {
   }
 
   h2 {
+    display: inline-block;
     color: $jumbo_h2;
+    margin: 0 auto;
     margin-bottom: 20px;
+  }
+
+  #tbh1:hover {
+    color: $theme_color2;
+    user-select: none;
+  }
+
+  #dyt123:hover {
+    color: $theme_color3;
+    user-select: none;
   }
 
   a {
