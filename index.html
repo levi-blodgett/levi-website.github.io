@@ -157,7 +157,7 @@
         </div>
         <div class="col-md-4 form">
           <section>
-            <h3>Get In Touch</h3>
+            <h3 id="dyt123">Contact Me</h3>
             <form method="POST" action="//formspree.io/levi_blodgett@outlook.com">
 
               <div class="contact-info-group">
@@ -188,13 +188,13 @@
 
   <script>
 
-  document.getElementById("tbh1").onclick = function() {mouseOver()};
+  document.getElementById("tbh1").onclick = function() {mouseClick()};
 
   let thing = ['Web Developer', 'Web Designer', 'Webmaster', 'Software Engineer'];
 
   let i = 0;
 
-  function mouseOver() {
+  function mouseClick() {
     if (i <= thing.length) {
       document.getElementById("tbh1").style.transition = "ease-out 125ms";
       document.getElementById("tbh1").innerHTML = thing[i];
@@ -204,6 +204,29 @@
       i = 0;
       document.getElementById("tbh1").innerHTML = thing[i];
       i++;
+    }
+  }
+
+  </script>
+
+  <script>
+
+  document.getElementById("dyt123").onclick = function() {mouseClick2()};
+
+  let array = ['Contact Me', 'Get In Touch', 'Provide Feedback', 'Email Me', 'Reach Out'];
+
+  let j = 0;
+
+  function mouseClick2() {
+    if (j <= array.length) {
+      document.getElementById("dyt123").style.transition = "ease-out 125ms";
+      document.getElementById("dyt123").innerHTML = array[j];
+      j++;
+    }
+    if (j > array.length) {
+      j = 0;
+      document.getElementById("dyt123").innerHTML = array[j];
+      j++;
     }
   }
 

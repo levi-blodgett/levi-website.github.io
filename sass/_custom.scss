@@ -778,10 +778,15 @@ object {
   }
 
   #tbh1:hover {
+    color: $theme_color2;
+    user-select: none;
+  }
+
+  #dyt123:hover {
     color: $theme_color3;
     user-select: none;
   }
-  
+
   a {
     display: inline-block;
     padding: 15px 25px;
