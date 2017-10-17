@@ -45,7 +45,7 @@
   <div class="jumbotron text-center" id="big_jumbo">
     <div="container bg">
       <h1>Levi Blodgett</h1>
-      <h2>Web Developer</h2>
+      <h2 id="tbh1">Web Developer</h2>
       <p>Welcome to my online portfolio! You may browse some professional information about me below, as well as use the menu in the top-right corner of the page to learn more about me or to view my projects and resume.
         <div class="btn-group buffer">
           <center>
@@ -185,6 +185,29 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+
+  <script>
+
+  document.getElementById("tbh1").onclick = function() {mouseOver()};
+
+  let thing = ['Web Developer', 'Web Designer', 'Webmaster', 'Software Engineer'];
+
+  let i = 0;
+
+  function mouseOver() {
+    if (i <= thing.length) {
+      document.getElementById("tbh1").style.transition = "ease-out 125ms";
+      document.getElementById("tbh1").innerHTML = thing[i];
+      i++;
+    }
+    if (i > thing.length) {
+      i = 0;
+      document.getElementById("tbh1").innerHTML = thing[i];
+      i++;
+    }
+  }
+
+  </script>
 
 </body>
 
