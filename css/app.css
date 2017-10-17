@@ -4,6 +4,11 @@
     transform: translateY(-100%); }
   100% {
     transform: translateY(0); } }
+@keyframes slideIn {
+  0% {
+    transform: translateY(-10%); }
+  100% {
+    transform: translateY(0); } }
 #big_jumbo {
   animation: 2s ease-out 0s 1 slideFromTop; }
 
@@ -503,8 +508,13 @@ object {
   #big_jumbo h1 {
     margin-bottom: 20px; }
   #big_jumbo h2 {
+    display: inline-block;
     color: #002d4b;
+    margin: 0 auto;
     margin-bottom: 20px; }
+  #big_jumbo #tbh1:hover {
+    color: #00a2f3;
+    user-select: none; }
   #big_jumbo a {
     display: inline-block;
     padding: 15px 25px;
