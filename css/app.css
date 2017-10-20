@@ -28,10 +28,10 @@ body {
   /* Safari */ }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url("../bower_components/font-awesome/fonts/FontAwesome.otf"); }
+  font-family: "Roboto";
+  src: url("../fonts/FontAwesome.otf") format("otf"), url("../fonts/FontAwesome.woff") format("woff"), url("../fonts/FontAwesome.woff2") format("woff2"); }
 * {
-  font-family: 'Roboto', 'monospace'; }
+  font-family: "Roboto", serif, sans-serif; }
 
 nav .container-fluid {
   padding-left: 0 !important; }
@@ -113,9 +113,6 @@ nav .container-fluid {
   height: auto;
   width: auto;
   margin: 30px auto; }
-  .form:hover h3 {
-    transition: ease-in-out 200ms;
-    background-color: #0080c0; }
   .form h3 {
     text-align: center;
     color: white;
@@ -548,7 +545,7 @@ object {
   opacity: 0.4; }
 
 footer {
-  background-image: linear-gradient(to top, rgba(98, 155, 255, 0.5), transparent); }
+  background-image: linear-gradient(to top, rgba(73, 139, 255, 0.5), transparent); }
   footer #top,
   footer #top1 {
     color: #00801e; }
@@ -625,6 +622,7 @@ footer {
     background-color: #005e8d;
     color: #fff; }
   footer p {
+    color: #003c5a;
     font-size: 20px; }
   footer .fa-copyright {
     font-size: 20px;

@@ -42,13 +42,16 @@ body {
 }
 // FONT
 @font-face {
-  font-family: 'Roboto';
-  src: url("../bower_components/font-awesome/fonts/FontAwesome.otf");
+  font-family: "Roboto";
+  src: url("../fonts/FontAwesome.otf") format("otf"),
+  url("../fonts/FontAwesome.woff") format("woff"),
+  url("../fonts/FontAwesome.woff2") format("woff2");
 }
 
 * {
-  font-family: 'Roboto', 'monospace';
+  font-family: "Roboto", serif, sans-serif;
 }
+
 // NAVBAR
 nav {
   .container-fluid {
@@ -156,13 +159,6 @@ nav {
   height: auto;
   width: auto;
   margin: 30px auto;
-
-  &:hover {
-    h3 {
-      transition: ease-in-out 200ms;
-      background-color: $theme_color2;
-    }
-  }
 
   h3 {
     text-align: center;
@@ -929,6 +925,7 @@ footer {
   }
 
   p {
+    color: $jumbo_h1;
     font-size: 20px;
   }
 
