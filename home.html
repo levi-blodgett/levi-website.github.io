@@ -63,8 +63,8 @@
 
   <div class="section-b">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-8">
+      <div class="wrapper1">
+        <div class="wrapper2">
           <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
               <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-decoration: none">
@@ -158,27 +158,25 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 form">
-          <section>
-            <h3 id="dyt123">Contact Me</h3>
-            <form method="POST" action="//formspree.io/levi_blodgett@outlook.com">
+        <div class="wrapper2 form">
+          <h3 id="dyt123">Contact Me</h3>
+          <form method="POST" action="//formspree.io/levi_blodgett@outlook.com">
 
-              <div class="contact-info-group">
+            <div class="contact-info-group">
 
-                <label><span>Your Name</span>
+              <label><span>Your Name</span>
                 <input type="text" name="name"></label>
 
-                <label><span>Your Email</span>
+              <label><span>Your Email</span>
                 <input type="text" name="_replyto"></label>
 
-              </div>
+            </div>
 
-              <label><span>Your Message</span>
+            <label><span>Your Message</span>
               <textarea name="message"></textarea></label>
 
-              <input type="submit" value="Send">
-            </form>
-          </section>
+            <input type="submit" value="Send">
+          </form>
         </div>
       </div>
     </div>
@@ -190,26 +188,26 @@
   <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
 
   <script>
+    document.getElementById("tbh1").onclick = function() {
+      mouseClick()
+    };
 
-  document.getElementById("tbh1").onclick = function() {mouseClick()};
+    let thing = ['Web Developer', 'Web Designer', 'Webmaster', 'Software Engineer'];
 
-  let thing = ['Web Developer', 'Web Designer', 'Webmaster', 'Software Engineer'];
+    let i = 1;
 
-  let i = 1;
-
-  function mouseClick() {
-    if (i <= thing.length) {
-      document.getElementById("tbh1").style.transition = "ease-out 125ms";
-      document.getElementById("tbh1").innerHTML = thing[i];
-      i++;
+    function mouseClick() {
+      if (i <= thing.length) {
+        document.getElementById("tbh1").style.transition = "ease-out 125ms";
+        document.getElementById("tbh1").innerHTML = thing[i];
+        i++;
+      }
+      if (i > thing.length) {
+        i = 0;
+        document.getElementById("tbh1").innerHTML = thing[i];
+        i++;
+      }
     }
-    if (i > thing.length) {
-      i = 0;
-      document.getElementById("tbh1").innerHTML = thing[i];
-      i++;
-    }
-  }
-
   </script>
 </body>
 
@@ -239,7 +237,7 @@
 
       }
     </script>
-    <p><a href="#top1" id="top">Top of Page</a></p>
+    <p><a href="#top" id="top">Top of Page</a></p>
     <p><i class="fa fa-copyright" aria-hidden="true"></i>Copyright 2017</p>
   </div>
 </footer>

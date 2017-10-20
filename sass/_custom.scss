@@ -8,7 +8,6 @@
     transform: translateY(0);
   }
 }
-
 @keyframes slideIn {
   0% {
     transform: translateY(-10%);
@@ -43,16 +42,14 @@ body {
 // FONT
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/FontAwesome.otf") format("otf"),
-  url("../fonts/FontAwesome.woff") format("woff"),
-  url("../fonts/FontAwesome.woff2") format("woff2");
+  src: url("../fonts/FontAwesome.otf") format("otf"), url("../fonts/FontAwesome.woff") format("woff"), url("../fonts/FontAwesome.woff2") format("woff2");
 }
 
 * {
   font-family: "Roboto", serif, sans-serif;
 }
-
 // NAVBAR
+
 nav {
   .container-fluid {
     padding-left: 0 !important;
@@ -78,6 +75,7 @@ nav {
   }
 }
 // ABOUT
+
 #aboutFive,
 #aboutFour,
 #aboutOne,
@@ -151,19 +149,67 @@ nav {
   border: $stack-border;
   background-color: $stack-bg;
 }
-// INDEX FORM CUSTOMIZATION
+// INDEX/HOME FORM CUSTOMIZATION
+@media only screen and (min-width: 1171px) {
+  .wrapper1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: minmax(auto);
+    grid-gap: 1em;
+  }
+
+  .form {
+    max-width: 630px;
+    max-height: 475px;
+  }
+  @media only screen and (min-width: 1695px) {
+    #Five,
+    #Four,
+    #One,
+    #Six,
+    #Three,
+    #Two {
+      padding: 11px 15px;
+    }
+  }
+  @media only screen and (max-width: 1694px) {
+    #Five,
+    #Four,
+    #One,
+    #Six,
+    #Three,
+    #Two {
+      padding: 9.5px 15px;
+    }
+  }
+  @media only screen and (max-width: 1609px) {
+    #Five,
+    #Four,
+    #One,
+    #Six,
+    #Three,
+    #Two {
+      padding: 8px 15px;
+    }
+  }
+}
+@media only screen and (max-width: 1170px) {
+  .wrapper1 {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-gap: 1em;
+    align-self: center;
+  }
+}
 
 .form {
-  max-width: 630px;
-  max-height: 475px;
   height: auto;
   width: auto;
-  margin: 30px auto;
 
   h3 {
     text-align: center;
     color: white;
-    margin: 10px auto;
+    margin: 0 auto 10px;
     padding: 20px 0;
     font-size: 30px;
     width: 40%;
@@ -769,8 +815,7 @@ object {
   h2 {
     display: inline-block;
     color: $jumbo_h2;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
   }
 
   #tbh1:hover {

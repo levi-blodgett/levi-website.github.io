@@ -107,16 +107,53 @@ nav .container-fluid {
   border: #006718;
   background-color: #00801e; }
 
+@media only screen and (min-width: 1171px) {
+  .wrapper1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: minmax(auto);
+    grid-gap: 1em; }
+
+  .form {
+    max-width: 630px;
+    max-height: 475px; } }
+@media only screen and (min-width: 1171px) and (min-width: 1695px) {
+  #Five,
+  #Four,
+  #One,
+  #Six,
+  #Three,
+  #Two {
+    padding: 11px 15px; } }
+@media only screen and (min-width: 1171px) and (max-width: 1694px) {
+  #Five,
+  #Four,
+  #One,
+  #Six,
+  #Three,
+  #Two {
+    padding: 9.5px 15px; } }
+@media only screen and (min-width: 1171px) and (max-width: 1609px) {
+  #Five,
+  #Four,
+  #One,
+  #Six,
+  #Three,
+  #Two {
+    padding: 8px 15px; } }
+@media only screen and (max-width: 1170px) {
+  .wrapper1 {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-gap: 1em;
+    align-self: center; } }
 .form {
-  max-width: 630px;
-  max-height: 475px;
   height: auto;
-  width: auto;
-  margin: 30px auto; }
+  width: auto; }
   .form h3 {
     text-align: center;
     color: white;
-    margin: 10px auto;
+    margin: 0 auto 10px;
     padding: 20px 0;
     font-size: 30px;
     width: 40%;
@@ -507,8 +544,7 @@ object {
   #big_jumbo h2 {
     display: inline-block;
     color: #002d4b;
-    margin: 0 auto;
-    margin-bottom: 20px; }
+    margin: 0 auto 20px; }
   #big_jumbo #tbh1:hover {
     color: #0080c0;
     user-select: none; }
